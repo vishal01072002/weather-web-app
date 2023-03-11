@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <h1>WEATHER APP</h1>
+
+        <div class="weather-tabs">
+          <button class="tab-btn" data-user-weather>Your Weather</button>
+          <button class="tab-btn" data-search-weather>Search Weather</button>
+        </div>
+
+        <div class="content">
+          <!-- location acess section -->
+          <div class="location-section">
+            <img
+              src="assets/location.png"
+              alt=""
+              class="location-img"
+              width="80"
+              height="80"
+              loading="lazy"
+            />
+
+            <h2>Grant Location Access</h2>
+
+            <p>Allow Access To Get Weather Information</p>
+
+            <button class="btn" grant-acess>GRANT ACCESS</button>
+          </div>
+
+          <!-- loading section -->
+          <div class="loading-section sub-container">
+            <img src="assets/loading.gif" alt="" width="150" height="150" />
+            <p>Loading...</p>
+          </div>
+
+          <!-- Search weather form section -->
+          <!-- <div class="search-form"> -->
+          <form class="search-form">
+            <input placeholder="Search for city..." data-input />
+
+            <button type="submit" class="btn">
+              <img
+                src="assets/search.png"
+                alt=""
+                width="20"
+                height="20"
+                loading="lazy"
+              />
+            </button>
+          </form>
+
+          <!-- weather information section -->
+          <div class="sub-container weather-info">
+            <div class="city-name">
+              <h2 city>Uttar pradesh</h2>
+              <img src="" width="35" flag />
+            </div>
+
+            <p class="weather-name" weather>clouds</p>
+            <img src="" class="weather-img" weather-icon />
+
+            <p class="temperature" temp></p>
+
+            <!-- 3 weather info card -->
+            <div class="weather-card">
+              <div class="card">
+                <img src="assets/wind.png" alt="" />
+                <p>Windspeed</p>
+                <p wind></p>
+              </div>
+              <div class="card">
+                <img src="assets/humidity.png" alt="" />
+                <p>Humidity</p>
+                <p humidity></p>
+              </div>
+              <div class="card">
+                <img src="assets/cloud.png" alt="" />
+                <p>Clouds</p>
+                <p cloud></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- not found error -->
+          <div class="sub-container error-box">
+            <img src="assets/not-found.png" alt="" width="300" />
+            <p>City Not Found...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
